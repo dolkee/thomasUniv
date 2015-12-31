@@ -1,3 +1,5 @@
-markdown: redcarpet
 baseurl: /thomasUniv
 exclude: ['README.md']
+
+# Build settings
+markdown: kramdown
