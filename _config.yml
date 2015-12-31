@@ -1,0 +1,3 @@
+markdown: redcarpet
+baseurl: /thomasUniv
+exclude: ['README.md']
