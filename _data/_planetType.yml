@@ -1,0 +1,27 @@
+# planets list
+
+- title: Dwarf
+  folder: dwarf
+  content: 'A **Dwarf Planet** is a planetory mass that is neither planet nor a star.'
+
+- title: Terrestrial
+  folder: terrestrial
+  content: '**Terrestrial planets** are rocky and form the inner planetary bodies of the Solar'
+
+- title: Gas-Giant
+  folder: gas-giant
+  content: 'The **biggest** and least dense planetary bodies in the Solar System'
+
+
+
+
+
+
+
+
+
+
+
+
+
+

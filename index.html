@@ -1,6 +1,33 @@
 ---
 layout: default
+titleAfter: 20 thousand league in the space
+meta: Diccover your Space
+priority: 1.0
 ---
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, atque.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ipsa fugiat alias autem asperiores maiores dolores magni labore quisquam, ea ipsum, voluptatum placeat vitae unde tenetur repellat modi molestias commodi explicabo quo corporis dolorem, deleniti facere. Impedit dignissimos ut quia autem, commodi delectus nostrum assumenda inventore. Non eum ducimus voluptates at quas excepturi vitae officiis tenetur deserunt rem, vel itaque ad sunt culpa magnam. Consequatur officiis, nostrum reiciendis aut ad laborum minima temporibus odit. Commodi rerum, quibusdam atque quaerat distinctio incidunt libero eius iste, ipsam, excepturi quia id, aperiam. Labore, facere perferendis alias ipsa deleniti, esse deserunt sequi nemo iusto?</p>
 
+<h1>Planets of the Universe</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, soluta!</p>
+
+<h2>Types of Planets</h2>
+
+
+<ol>
+{% for planet in site.data._planetType  %}
+	<li>
+		<a href="{{site.baseurl}}/planets/{{planet.folder}}/">{{ planet.title }}</a>
+		{{ planet.content | markdownify}}
+	</li>
+	{% endfor %}
+</ol>
+
+<h2>Recently Discovered Planets </h2>
+
+<ul>
+
+	{% for news in site.categories.recently-discovered limit:2 %}
+	<li>
+		<a href="">{{ news.title }}</a>
+		<p>{{ news.meta }}</p>
+	</li>
+	{% endfor %}
+</ul>
